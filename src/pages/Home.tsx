@@ -1,5 +1,6 @@
 import { StateManagerContext } from "@itsy-ui/core";
 import { ItsyGrid } from '@itsy-ui/data';
+// import the custom override handler so the code is registered
 import "../handlers/navigationHandler";
 
 const gridSchema = {
@@ -39,8 +40,10 @@ const schema = {
     dataSource: "datasource",
     gridViewType: "List",
     controlID: "master_details"
-}
+};
 
+// Define ItsyGrid widget with StateManagerContext.Provider to set the contextPath
+// Its important to define the contextPath as its used for widget overrides
 const Home: React.FC = () => {
     return (
         <StateManagerContext.Provider key="grid-context" value={{ contextPath: { "id": "master_details" } }}>
