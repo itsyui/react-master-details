@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "@itsy-ui/core";
 import "@itsy-ui/freshui-theme";
+import "@itsy-ui/freshui-theme/dist/styles/fonts/icons.css";
+import "@itsy-ui/freshui-theme/dist/es/itsy-ui-freshui-theme.esm.css";
 import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
